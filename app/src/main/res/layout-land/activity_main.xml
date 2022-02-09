@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:shadowColor="@color/black"
+        android:text="Conversor de moeda"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/et_valorMeticais"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="Insira o Valor em Meticais"
+        android:inputType="numberDecimal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/bt_real"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#DA6969"
+            android:shadowColor="#0B0A0A"
+            android:text="Real R$"
+            app:backgroundTint="#8C4915"
+            app:strokeColor="#100F0F" />
+
+        <Button
+            android:id="@+id/bt_dolar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#CFBABA"
+            android:text="Dolar $"
+            android:textColorLink="#1C1818"
+            app:backgroundTint="#1B1818" />
+
+        <Button
+            android:id="@+id/bt_Yen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#1B1717"
+            android:text="Yen ¥" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Desenvolvido por Edio Chongola."
+        android:textSize="24sp" />
+
+
+</LinearLayout>
+
